@@ -19,7 +19,9 @@ import moment from 'moment'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 {{/elementUI}}
+{{#vuex}}
 import store from './store'
+{{/vuex}}
 import './components'
 {{#svg}}
 import './assets/icons'
