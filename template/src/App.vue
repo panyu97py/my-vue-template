@@ -18,8 +18,8 @@ export default {
   components: {
     demo
   }{{/router}}{{#vuex}},
-  methods:{
-    ...mapActions(['setLogoClickTimes'])    
+  methods: {
+    ...mapActions(['setLogoClickTimes'])
   }{{/vuex}}
 }
 </script>
