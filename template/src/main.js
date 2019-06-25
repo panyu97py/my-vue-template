@@ -19,6 +19,7 @@ import moment from 'moment'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 {{/elementUI}}
+import store from './store'
 import './components'
 {{#svg}}
 import './assets/icons'
@@ -33,6 +34,9 @@ Vue.config.productionTip = false
 {{#axios}}
 Vue.prototype.$api = api
 {{/axios}}
+{{#vuex}}
+Vue.prototype.$store=store
+{{/vuex}}
 Vue.prototype.$utils = utils
 {{#moment}}
 Vue.prototype.$moment = moment
