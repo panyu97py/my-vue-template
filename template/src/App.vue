@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <img src="./assets/logo.jpg"
-         class="logo">
+         class="logo"{{#vuex}}@click="setLogoClickTimes"
+         {{/vuex}}>
     <svg-icon icon-class="alarm" />
      {{#router}}
     <router-view/>
@@ -15,11 +16,17 @@
 {{#unless router}}
   import demo from './views/demo'
 {{/unless}}
+{{#vuex}}
+import {mapActions} from 'vuex'
+{{/vuex}}
 export default {
   name: 'App'{{#router}}{{else}},
     components: {
       demo
-    }{{/router}}
+    }{{/router}}{{#vuex}},
+    methods:{
+      ...mapActions(['setLogoClickTimes'])
+    }{{/vuex}}
 }
 </script>
 
