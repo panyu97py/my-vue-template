@@ -4,7 +4,7 @@
     <template v-if="!item.children|| noHiddenChildNumber (item) < 1">
       <el-menu-item :index="item.path" :route="{name:item.name}" v-if="item.meta">
         <svg-icon :icon-class="item.meta.icon" class="sidebar_icon" v-if="item.meta.icon"/>
-        <p slot="title">{{item.meta.title}}</p>
+        <p slot="title">\{{item.meta.title}}</p>
       </el-menu-item>
     </template>
     <!-- 当只有一个显示的子路由时 -->
@@ -19,7 +19,7 @@
           class="sidebar_icon"
           v-if="item.children[0].meta.icon"
         />
-        <p slot="title">{{item.children[0].meta.title}}</p>
+        <p slot="title">\{{item.children[0].meta.title}}</p>
       </el-menu-item>
     </template>
     <!-- 当显示的子路由大于1时 -->
@@ -27,7 +27,7 @@
       <el-submenu :index="item.path" :key="item.name" v-if="item.meta">
         <template slot="title">
           <svg-icon :icon-class="item.meta.icon" class="sidebar_icon" v-if="item.meta.icon"/>
-          <p slot="title">{{item.meta.title}}</p>
+          <p slot="title">\{{item.meta.title}}</p>
         </template>
         <SidebarItem v-for="(item,index) in item.children" :key="index" :item="item"/>
       </el-submenu>

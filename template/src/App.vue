@@ -3,13 +3,23 @@
     <img src="./assets/logo.jpg"
          class="logo">
     <svg-icon icon-class="alarm" />
-    <router-view />
+     {{#router}}
+    <router-view/>
+    {{else}}
+    <demo/>
+    {{/router}}
   </div>
 </template>
 
 <script>
+{{#unless router}}
+  import demo from './views/demo'
+{{/unless}}
 export default {
-  name: 'App'
+  name: 'App'{{#router}}{{else}},
+    components: {
+      demo
+    }{{/router}}
 }
 </script>
 

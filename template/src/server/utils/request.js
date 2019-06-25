@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { Notification } from 'element-ui'
-import store from '@/store'
+// import store from '@/store'
 import convertUri from './convertUri'
 import oauthJudge from './oauthJudge'
 // 创建axios实例
@@ -13,7 +13,8 @@ const service = axios.create({
 service.interceptors.request.use(
   config => {
     config.url = convertUri(config.url)
-    let token = store.getters.token || null
+    // let token = store.getters.token || null
+    let token = 'token'
     // 请求头带token
     if (token && oauthJudge(config.url)) {
       config.headers['Authorization'] = 'Bearer ' + token // 让每个请求携带自定义token 请根据实际情况自行修改
