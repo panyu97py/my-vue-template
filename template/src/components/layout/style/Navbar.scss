@@ -1,0 +1,50 @@
+$padding_size:20px;
+&_Navbar{
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  &_left{
+    display: flex;
+    &_breadcrumb{
+      margin-left: 15px;
+    }
+  }
+  &_right{
+
+  }
+}
+&_Navbar::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  opacity: 0.5;
+  background: #CECECE;
+}
+&_Navbar_notCollapse,&_Navbar_collapse{
+  position: relative;
+  height: $navbar_height;
+  background: white;
+  transition: width  $transition_time , margin-left $transition_time;
+  &_icon{
+    $icon-size:25px;
+    padding: calc((#{$navbar_height} - #{$icon-size}) / 2) 0;
+    font-size: $icon-size;
+  }
+}
+&_Navbar_notCollapse{
+  margin-left:  $sidebar_width;
+  &_icon{
+    transform: rotate(90deg);
+    transition: transform  $transition_time;
+  }
+}
+&_Navbar_collapse{
+  margin-left: $sidebar_collapse_width;
+  &_icon{
+    transform: rotate(0deg);
+    transition: transform  $transition_time;
+  }
+}

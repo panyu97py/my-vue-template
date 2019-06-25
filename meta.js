@@ -70,6 +70,14 @@ module.exports = {
       type: 'confirm',
       message: 'Use moment in you project?'
     },
+    axios:{
+      type: 'confirm',
+      message: 'Use axios in you project?'
+    },
+    echarts:{
+      type: 'confirm',
+      message: 'Use echarts in you project?'
+    },
     autoInstall: {
       type: 'list',
       message:
@@ -100,9 +108,15 @@ module.exports = {
   },
   filters: {
     'src/router/**/*': 'router',
+    'src/server/**/*': 'axios',
     'src/store/**/*': 'vuex',
     'src/assets/icons/**/*':'svg',
-    'src/components/SvgIcon/**/*':'svg'
+    'src/components/SvgIcon/**/*':'svg',
+    'src/components/table/**/*':'elementUI',
+    'src/components/breadcrumb/**/*':'elementUI',
+    'src/components/pagination/**/*':'elementUI',
+    'src/components/layout/**/*':'elementUI',
+    'src/components/echarts/**/*':'echarts',
   },
   complete: function(data, { chalk }) {
     const green = chalk.green

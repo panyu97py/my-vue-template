@@ -9,16 +9,20 @@ import Vuex from 'vuex'
 import router from './router'
 {{/router}}
 import utils from './utils'
+{{#axios}}
 import api from './server'
+{{/axios}}
 {{#moment}}
 import moment from 'moment'
 {{/moment}}
 {{#elementUI}}
 import ElementUI from 'element-ui'
-{{/elementUI}}
 import 'element-ui/lib/theme-chalk/index.css'
+{{/elementUI}}
 import './components'
+{{#svg}}
 import './assets/icons'
+{{/svg}}
 {{#vuex}}
 Vue.use(Vuex)
 {{/vuex}}
@@ -26,7 +30,9 @@ Vue.use(Vuex)
 Vue.use(ElementUI)
 {{/elementUI}}
 Vue.config.productionTip = false
+{{#axios}}
 Vue.prototype.$api = api
+{{/axios}}
 Vue.prototype.$utils = utils
 {{#moment}}
 Vue.prototype.$moment = moment

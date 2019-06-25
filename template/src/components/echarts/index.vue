@@ -34,14 +34,14 @@ export default {
   methods: {
     initChart () {
       this.chart = echarts.init(this.$el, 'macarons')
-      // window.addEventListener('resize', () => { this.chart.resize() })
-      this.$store.dispatch('setChartsList', this.chart)
+      window.addEventListener('resize', () => { this.chart.resize() })
+      // this.$store.dispatch('setChartsList', this.chart)
       this.chart.setOption(this.option)
     }
   },
-  beforeDestroy () {
-    this.$store.dispatch('chartDestroy', this.id)
-  },
+  // beforeDestroy () {
+  //   this.$store.dispatch('chartDestroy', this.id)
+  // },
   mounted () {
     this.initChart()
   }

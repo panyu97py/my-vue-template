@@ -1,0 +1,19 @@
+$padding: 20px;
+&_mainView,&_mainView_collapse{
+  background: $layoutMain_background;
+  height: calc( 100% - #{$navbar_height} - 2 * #{$padding} );
+  position: relative;
+  transition: width  $transition_time , margin-left $transition_time;
+  padding:  $padding;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+&_mainView{
+  margin-left: $sidebar_width;
+  width: calc( 100% -  #{$sidebar_width} - 2 * #{$padding} );
+}
+&_mainView_collapse{
+  margin-left: $sidebar_collapse_width;
+  width: calc( 100% -  #{$sidebar_collapse_width} - 2 * #{$padding} );
+
+}

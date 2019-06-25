@@ -1,0 +1,20 @@
+&_table{
+  &_head{
+    background: $table_head;
+    text-align: center;
+    color:$text_color;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0;
+    height: 48px;
+  }
+  &_cell{
+    font-size: 14px;
+    color:$text_color;
+    text-align: center;
+    border: none;
+  }
+}
+&_table::before{
+  height: 0;
+}
