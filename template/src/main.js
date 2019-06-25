@@ -37,7 +37,7 @@ Vue.config.productionTip = false
 Vue.prototype.$api = api
 {{/axios}}
 {{#vuex}}
-Vue.prototype.$store=store
+Vue.prototype.$store = store
 {{/vuex}}
 Vue.prototype.$utils = utils
 {{#moment}}
