@@ -1,8 +1,8 @@
 {
-  "name": "my-vue-template",
+  "name": "{{ name }}",
   "version": "1.0.0",
-  "description": "my personal vue template",
-  "author": "panyupy@vip.qq.com",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
   "private": true,
   "scripts": {
     "dev": "cross-env API_ENV=dev webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
