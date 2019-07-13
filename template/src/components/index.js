@@ -1,5 +1,7 @@
 import Vue from 'vue'
+{{#echarts}}
 import echarts from '@/components/echarts'
+{{/echarts}}
 import elimTable from '@/components/table'
 import pagination from '@/components/pagination'
 {{#svg}}
