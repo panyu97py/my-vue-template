@@ -5,7 +5,9 @@ import pagination from '@/components/pagination'
 {{#svg}}
 import SvgIcon from '@/components/SvgIcon'
 {{/svg}}
+{{#echarts}}
 Vue.component('echarts', echarts)
+{{/echarts}}
 {{#svg}}
 Vue.component('svg-icon', SvgIcon)
 {{/svg}}
