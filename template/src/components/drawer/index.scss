@@ -1,0 +1,29 @@
+.components_drawer {
+  .el-drawer__header{
+    padding: 0;
+    margin: 0;
+  }
+  &_header {
+    color: white;
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    background: #11233F;
+    font-size: 18px;
+    &_closeIcon{
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba($color: #fff, $alpha: 0.22);
+      text-align: center;
+      line-height: 24px;
+      cursor: default;
+    }
+  }
+  &_body{
+    padding: 25px;
+  }
+}

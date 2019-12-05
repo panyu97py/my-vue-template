@@ -1,0 +1,33 @@
+.components_card {
+  margin-bottom: 20px;
+  box-shadow:0px 0px 5px 0px rgba(207,209,213,0.2);
+  &_view {
+    background: white;
+    border-radius: 4px;
+    padding: $card_padding;
+    height: 100%;
+    box-sizing: border-box;;
+    position: relative;
+    // height: calc(100% - 2 * #{$card_padding});
+    &_head {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 22px;
+      @include initTitle;
+      &_subTitle{
+        margin-top: 10px;
+        color:$subtitle_text_color;
+        font-size: 14px;
+      }
+      &_left,
+      &_right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    &_body {
+      position: relative;
+    }
+  }
+}

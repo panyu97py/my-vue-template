@@ -58,10 +58,6 @@ module.exports = {
       type: 'confirm',
       message: 'Install vuex?'
     },
-    svg:{
-      type: 'confirm',
-      message: 'Use svg in you project?'
-    },
     elementUI:{
       type: 'confirm',
       message: 'Use element-UI in you project?'
@@ -110,8 +106,6 @@ module.exports = {
     'src/router/**/*': 'router',
     'src/server/**/*': 'axios',
     'src/store/**/*': 'vuex',
-    'src/assets/icons/**/*':'svg',
-    'src/components/SvgIcon/**/*':'svg',
     'src/components/table/**/*':'elementUI',
     'src/components/breadcrumb/**/*':'elementUI',
     'src/components/pagination/**/*':'elementUI',

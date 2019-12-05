@@ -1,0 +1,21 @@
+.components_upload {
+  &_icon {
+    font-size: 22px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .el-upload--picture-card {
+    margin: 0 8px 8px 0;
+    border-radius: 4px;
+    width: 80px;
+    height: 80px;
+  }
+  .el-upload-list--picture-card .el-upload-list__item {
+    border-radius: 4px;
+    width: 80px;
+    height: 80px;
+  }
+}

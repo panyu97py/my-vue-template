@@ -1,0 +1,29 @@
+.components_dialog {
+  border-radius: 4px;
+  .el-dialog__header {
+    box-sizing: border-box;
+    padding: 24px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+  }
+  .el-dialog__headerbtn{
+    position: absolute;
+    top: 24px;
+    right: 20px;
+  }
+  .el-dialog__footer {
+    padding: 0px 20px 24px 20px;
+    text-align: right;
+  }
+  .el-dialog__body {
+    position: relative;
+    padding: 24px 20px 24 20px;
+  }
+  &_title {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+  }
+}

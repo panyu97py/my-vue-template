@@ -1,20 +1,22 @@
-&_table{
-  &_head{
-    background: $table_head;
-    text-align: center;
-    color:$text_color;
+$table_head: #f5f6f8; //表格头颜色
+.components_table {
+  &_head {
+    background: $table_head !important;
+    text-align: center !important;
+    color: $primary_text_color;
     font-size: 14px;
     font-weight: normal;
+    border: none !important;
     padding: 0;
     height: 48px;
   }
-  &_cell{
+  &_cell {
     font-size: 14px;
-    color:$text_color;
-    text-align: center;
-    border: none;
+    color: $primary_text_color;
+    text-align: center !important;
+    border: none !important;
   }
 }
-&_table::before{
+.components_table::before {
   height: 0;
 }
