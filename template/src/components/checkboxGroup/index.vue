@@ -10,7 +10,7 @@
         <el-col v-for="item in option"
                 :span="boxSize"
                 :key="item[valueKey]">
-          <el-checkbox :label="item[valueKey]">{{\item[labelKey]}}</el-checkbox>
+          <el-checkbox :label="item[valueKey]">\{{item[labelKey]}}</el-checkbox>
         </el-col>
       </el-row>
     </el-checkbox-group>
