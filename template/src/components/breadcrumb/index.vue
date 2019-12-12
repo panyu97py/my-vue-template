@@ -5,7 +5,7 @@
         v-for="(item,index) in breadcrumbList"
         :key="index"
         :to="item.to"
-      >{{item.label}}</el-breadcrumb-item>
+      >\{{item.label}}</el-breadcrumb-item>
     </el-breadcrumb>
   </div>
 </template>

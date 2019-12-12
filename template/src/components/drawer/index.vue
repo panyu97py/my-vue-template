@@ -10,7 +10,7 @@
              :direction="direction">
     <div slot="title"
          class="components_drawer_header">
-      <p class="components_drawer_header_title">{{title||'title'}}</p>
+      <p class="components_drawer_header_title">\{{title||'title'}}</p>
       <p class="components_drawer_header_closeIcon"
          @click="close">×</p>
     </div>
