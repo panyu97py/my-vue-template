@@ -29,7 +29,7 @@
             <el-radio v-for="(item,index) in formItemOption"
                       :label="item[formItemValueKey]"
                       :disabled="disabled"
-                      :key="index">{{item[formItemLabelKey]}}</el-radio>
+                      :key="index">/{{item[formItemLabelKey]}}</el-radio>
           </el-radio-group>
           <el-select v-else-if="formItemType==='select'&&formItemOption"
                      class="components_formItem_select"
